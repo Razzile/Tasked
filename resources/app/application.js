@@ -13,7 +13,7 @@ app.on('ready', function () {
 
 
     mainWindow.loadUrl('file://' + __dirname + '/index.html');
-    mainWindow.toggleDevTools();
+
     mainWindow.on('close', function () {
 
     });
@@ -22,7 +22,3 @@ app.on('ready', function () {
 app.on('window-all-closed', function () {
     app.quit();
 });
-
-function minimizePressed() {
-    BrowserWindow.getFocusedWindow().minimize();
-}

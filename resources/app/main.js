@@ -1,5 +1,4 @@
-var app = require('app');
-var BrowserWindow = require('browser-window');
+var BrowserWindow = require('remote').require('browser-window');
 /* alert */
 function CustomAlert() {
     this.render = function(dialog) {
@@ -7,6 +6,8 @@ function CustomAlert() {
         var winH = window.innerHeight;
         var dialogoverlay = document.getElementById('dialogoverlay');
         var dialogbox = document.getElementById('dialogbox');
+        dialogoverlay.style.zIndex = 9999;
+        dialogbox.style.zIndex = 99999;
         dialogoverlay.style.display = "block";
         dialogoverlay.style.height = winH + "px";
         dialogbox.style.left = (winW / 2) - (550 * .5) + "px";
@@ -33,5 +34,9 @@ function aboutPressed() {
 }
 
 function minimizePressed() {
-    //BrowserWindow.getFocusedWindow().minimize();
+    BrowserWindow.getFocusedWindow().minimize();
+}
+
+function closePressed() {
+    window.close();
 }

@@ -5,6 +5,10 @@ body {
     border: 0;
 }
 
+.btn {
+
+}
+
 h1 {
   -webkit-app-region: no-drag;
   position: relative;
@@ -21,6 +25,7 @@ h1 {
 .navbar {
     border-radius: 0;
     -webkit-app-region: drag;
+    margin-bottom: 0;
 }
 
 .navbar-collapse {
