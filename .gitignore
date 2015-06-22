@@ -1,3 +1,6 @@
+locales/
+tools/
+./
 # Logs
 logs
 *.log
