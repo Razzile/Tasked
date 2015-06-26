@@ -26,11 +26,15 @@ var Alert = new CustomAlert();
 window.alert = Alert.render;
 
 $(document).ready(function() {
-    $("#overflow").niceScroll();
+    $("html").niceScroll({
+        cursorcolor: "#5b135e",
+        cursorwidth: 10,
+        cursorborder: "0px"
+        });
 });
 
 function aboutPressed() {
-    alert("ayy");
+    alert("This is a template app. If you see this, something as gone terribly wrong");
 }
 
 function minimizePressed() {

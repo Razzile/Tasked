@@ -2,7 +2,7 @@
 
 body {
     background: #7D1A82;
-    border: 0;
+    padding: 50px;
 }
 
 .btn {
@@ -25,7 +25,7 @@ h1 {
 .navbar {
     border-radius: 0;
     -webkit-app-region: drag;
-    margin-bottom: 0;
+    margin-bottom: 80px;
 }
 
 .navbar-collapse {
